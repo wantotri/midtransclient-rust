@@ -3,6 +3,7 @@ name = "midtransclient"
 version = "0.1.0"
 edition = "2021"
 authors = ["Kurnia Wanto <wanto47@gmail.com>"]
+description = "Unofficial Rust API client/library for Midtrans Payment API"
 
 [dependencies]
 chrono = "0.4.22"
