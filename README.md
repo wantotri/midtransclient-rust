@@ -5,6 +5,14 @@ This is Unofficial Rust API client/library for Midtrans Payment API.
 
 ## 1. Installation
 
+Add the follwing line to your Cargo.toml file
+
+```
+midtransclient = "0.1.0"
+```
+
+or
+
 ```
 cargo install --git https://github.com/wantotri/midtransclient.git
 ```
