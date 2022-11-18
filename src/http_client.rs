@@ -12,7 +12,8 @@ use crate::{MidtransError, error_midtrans::ApiError};
 
 const CONTENT_TYPE: &'static str = "application/json";
 const ACCEPT: &'static str = "application/json";
-const USER_AGENT: &'static str = "midtransclient-rust/0.1.0";
+const USER_AGENT: &'static str = "midtransclient-rust";
+const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 
 type MidtransResult = Result<HashMap<String, Value>, MidtransError>;
 
@@ -113,10 +114,11 @@ impl HttpClientBuilder {
     }
 
     pub fn build(&self) -> reqwest::Result<reqwest::blocking::Client> {
+        let user_agent = format!("{}/{}", USER_AGENT, VERSION);
         let mut headers = header::HeaderMap::new();
         headers.insert("content-type", header::HeaderValue::from_static(CONTENT_TYPE));
         headers.insert("accept", header::HeaderValue::from_static(ACCEPT));
-        headers.insert("user-agent", header::HeaderValue::from_static(USER_AGENT));
+        headers.insert("user-agent", user_agent.parse().unwrap());
 
         if let Some(custom_headers) = &self.custom_headers {
             for (key, val) in custom_headers.iter() {
