@@ -1,6 +1,6 @@
 [package]
 name = "midtransclient"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Kurnia Wanto <wanto47@gmail.com>"]
 description = "Unofficial Rust API client/library for Midtrans Payment API"
