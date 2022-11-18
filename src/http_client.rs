@@ -12,7 +12,7 @@ use crate::{MidtransError, error_midtrans::ApiError};
 
 const CONTENT_TYPE: &'static str = "application/json";
 const ACCEPT: &'static str = "application/json";
-const USER_AGENT: &'static str = "midtransclient-rust/0.0.1";
+const USER_AGENT: &'static str = "midtransclient-rust/0.1.0";
 
 type MidtransResult = Result<HashMap<String, Value>, MidtransError>;
 
