@@ -1,6 +1,9 @@
 Midtrans Client - Rust
 ======================
 
+[![crates.io](https://img.shields.io/crates/v/midtransclient?color=yellowgreen)](https://crates.io/crates/midtransclient)
+[![license](https://img.shields.io/crates/l/midtransclient)](LICENSE)
+
 This is Unofficial Rust API client/library for Midtrans Payment API.
 
 ## 1. Installation
@@ -8,13 +11,13 @@ This is Unofficial Rust API client/library for Midtrans Payment API.
 Add the follwing line to your Cargo.toml file
 
 ```
-midtransclient = "0.1.0"
+midtransclient = "X.X.X"
 ```
 
-or
+or using cargo
 
 ```
-cargo install --git https://github.com/wantotri/midtransclient.git
+cargo add midtransclient
 ```
 
 
@@ -228,9 +231,6 @@ println!("charge_response: {:?}", charge_response);
 #### Credit Card 3DS Authentication
 
 The credit card charge result may contains `redirect_url` for 3DS authentication. 3DS Authentication should be handled on Frontend please refer to [API docs](https://api-docs.midtrans.com/#card-features-3d-secure)
-
-For full example on Credit Card 3DS transaction refer to:
-- [Flask App examples](/examples/flask_app) that implement Snap & Core Api
 
 
 ### 2.2.D Subscription API
@@ -522,7 +522,3 @@ Under the hood this API wrapper is using [reqwest](https://docs.rs/reqwest/lates
 * [SNAP documentation](http://snap-docs.midtrans.com)
 * [Core API documentation](http://api-docs.midtrans.com)
 
-
-## License
-
-[MIT License](LICENSE)
