@@ -9,7 +9,7 @@ type MidtransResult = Result<HashMap<String, Value>, MidtransError>;
 
 /// Snap struct used to do request to Midtrans Snap API
 pub struct Snap {
-    api_config: ApiConfig,
+    pub api_config: ApiConfig,
 }
 
 impl MidtransClient for Snap {}
