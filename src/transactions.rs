@@ -1,6 +1,6 @@
 //! Transactions
 
-use std::{collections::HashMap};
+use std::collections::HashMap;
 use reqwest::Method;
 use serde_json::Value;
 use crate::{MidtransError, ApiConfig, http_client::MidtransClient};

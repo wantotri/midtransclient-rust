@@ -8,7 +8,7 @@ use reqwest::{
     Method
 };
 use serde_json::Value;
-use crate::{MidtransError, error_midtrans::ApiError};
+use crate::{MidtransError, error::ApiError};
 
 const CONTENT_TYPE: &'static str = "application/json";
 const ACCEPT: &'static str = "application/json";

@@ -120,7 +120,7 @@ pub mod config;
 pub mod http_client;
 pub mod core_api;
 pub mod snap;
-pub mod error_midtrans;
+pub mod error;
 pub mod transactions;
 
 #[doc(inline)]
@@ -132,6 +132,6 @@ pub use snap::Snap;
 #[doc(inline)]
 pub use http_client::MidtransClient;
 #[doc(inline)]
-pub use error_midtrans::MidtransError;
+pub use error::MidtransError;
 #[doc(inline)]
 pub use transactions::Transactions;
