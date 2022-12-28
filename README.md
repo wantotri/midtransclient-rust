@@ -46,8 +46,8 @@ let core = CoreApi::new(false, "YOUR_SERVER_KEY".to_string())
 
 ```rust
 // Create Snap API instance
-let snap = Snap::new(false, "YOUR_SERVER_KEY")
-    .client_key("YOUR_CLIENT_KEY")
+let snap = Snap::new(false, "YOUR_SERVER_KEY".to_string())
+    .client_key("YOUR_CLIENT_KEY".to_string())
     .build()
     .unwrap();
 ```
@@ -87,8 +87,8 @@ pub fn create_transaction_redirect_url(&self, parameters: &str) -> Result<Value,
 
 ```rust
 // Create Snap API instance
-let snap = Snap::new(false, "YOUR_SERVER_KEY")
-    .client_key("YOUR_CLIENT_KEY")
+let snap = Snap::new(false, "YOUR_SERVER_KEY".to_string())
+    .client_key("YOUR_CLIENT_KEY".to_string())
     .build()
     .unwrap();
 
@@ -205,8 +205,8 @@ Get token should be handled on  Frontend please refer to [API docs](https://api-
 
 ```rust
 // Create Core API instance
-let snap = CoreApi::new(false, "YOUR_SERVER_KEY")
-    .client_key("YOUR_CLIENT_KEY")
+let snap = CoreApi::new(false, "YOUR_SERVER_KEY".to_string())
+    .client_key("YOUR_CLIENT_KEY".to_string())
     .build()
     .unwrap();
 
@@ -244,8 +244,8 @@ You will receive `saved_token_id` as part of the response when the initial card 
 
 ```rust
 // Create Subscription API instance
-let core = CoreApi::new(false, "SERVER_KEY")
-    .client_key("CLIENT_KEY")
+let core = CoreApi::new(false, "SERVER_KEY".to_string())
+    .client_key("CLIENT_KEY".to_string())
     .build()
     .unwrap();
 
@@ -309,8 +309,8 @@ You will receive gopay payment token using `get_payment_account` API call
 
 ```rust
 // Create Subscription API instance
-let core = CoreApi::new(false, "SERVER_KEY")
-    .client_key("CLIENT_KEY")
+let core = CoreApi::new(false, "SERVER_KEY".to_string())
+    .client_key("CLIENT_KEY".to_string())
     .build()
     .unwrap();
 
@@ -345,8 +345,8 @@ HTTP notification will be sent whenever transaction status is changed
 
 ```rust
 // Create Core API / Snap instance (both have shared `transactions` methods)
-let core = CoreApi::new(false, "SERVER_KEY")
-    .client_key("CLIENT_KEY")
+let core = CoreApi::new(false, "SERVER_KEY".to_string())
+    .client_key("CLIENT_KEY".to_string())
     .build()
     .unwrap();
 
@@ -464,8 +464,8 @@ match charge_response {
 
 ```rust
 // Create Core API instance
-let core = CoreApi::new(false, "SERVER_KEY")
-    .client_key("CLIENT_KEY")
+let core = CoreApi::new(false, "SERVER_KEY".to_string())
+    .client_key("CLIENT_KEY".to_string())
     .build()
     .unwrap();
 
@@ -482,8 +482,8 @@ As [described in API docs](https://snap-docs.midtrans.com/#override-notification
 This can be achieved by:
 ```rust
 // Create Snap instance
-let snap = Snap::new(false, "SERVER_KEY")
-    .client_key("CLIENT_KEY")
+let snap = Snap::new(false, "SERVER_KEY".to_string())
+    .client_key("CLIENT_KEY".to_string())
     .build()
     .unwrap();
 
@@ -503,8 +503,8 @@ snap.api_config.set_custom_headers(custom_headers);
 
 ```rust
 // Create Snap instance
-let snap = Snap::new(false, "SERVER_KEY")
-    .client_key("CLIENT_KEY")
+let snap = Snap::new(false, "SERVER_KEY".to_string())
+    .client_key("CLIENT_KEY".to_string())
     .build()
     .unwrap();
 
